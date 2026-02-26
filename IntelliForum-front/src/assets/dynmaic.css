@@ -1,0 +1,15 @@
+
+/* 
+ * 强制统一为电脑端显示逻辑
+ * 移除媒体查询，确保 display-when-screen-small 始终隐藏
+ * hidden-when-screen-small 始终显示（不定义即显示，或者定义为空）
+ */
+
+.display-when-screen-small {
+    display: none !important;
+}
+
+/* 
+ * 原有的 hidden-when-screen-small 在小屏幕隐藏，现在不再隐藏
+ * 如果需要保留类名兼容性，可以定义为空，或者干脆不定义
+ */
